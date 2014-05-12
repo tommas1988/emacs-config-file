@@ -40,6 +40,9 @@
 ;; set flymale-php
 (add-hook 'php-mode-hook 'flymake-php-load)
 
+;; set hs-minor-mode
+(add-hook 'php-mode-hook 'hs-minor-mode)
+
 ;; config web-mode
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
@@ -76,6 +79,9 @@
 
 ;; set smartparens-global-mode
 (eval-after-load "smartparens-autoloads" '(smartparens-global-mode t))
+
+;; set up window-numbering-mode
+(eval-after-load "window-numbering-autoloads" '(window-numbering-mode t))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
