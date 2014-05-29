@@ -24,9 +24,6 @@
 ;; load js config in starter-kit
 (starter-kit-load "js")
 
-;; initialize color-theme
-(load-theme 'monokai)
-
 ;; turn on cursor change when Emacs is idle
 (curchg-toggle-cursor-type-when-idle 1)
 
@@ -63,6 +60,7 @@
  '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(custom-safe-themes (quote ("60f04e478dedc16397353fb9f33f0d895ea3dab4f581307fbf0aa2f07e658a40" "a6df4e244c3ced9e44376747bf70b5499a02212e5f8e40ac68c4a6c5cc6f86d2" default)))
+
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -71,3 +69,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Bitstream Vera Sans Mono" :foundry "outline" :slant italic :weight normal :height 113 :width normal)))))
+
+;; initialize color-theme
+(load-theme 'monokai)
