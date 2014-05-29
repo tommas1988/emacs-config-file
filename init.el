@@ -77,6 +77,9 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
+;; overwrite etags key bind
+(global-set-key (kbd "M-.") 'etags-select-find-tag-at-point)
+
 ;; set smartparens-global-mode
 (eval-after-load "smartparens-autoloads" '(smartparens-global-mode t))
 
@@ -97,3 +100,4 @@
  )
 
 ;;; init.el ends here
+(put 'upcase-region 'disabled nil)
