@@ -23,8 +23,6 @@
 ;; config js2-mode
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.json\\'" . js2-mode))
-;; load js config in starter-kit
-;;(starter-kit-load "js")
 
 ;; turn on cursor change when Emacs is idle
 (curchg-toggle-cursor-type-when-idle 1)
