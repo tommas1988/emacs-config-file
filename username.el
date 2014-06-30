@@ -13,6 +13,8 @@
 (add-hook 'php-mode-hook 'flymake-php-load)
 ;; set hs-minor-mode
 (add-hook 'php-mode-hook 'hs-minor-mode)
+;; set psr-2 coding style
+(add-hook 'php-mode-hook 'php-enable-psr2-coding-style)
 
 ;; config web-mode
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
@@ -22,10 +24,7 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.json\\'" . js2-mode))
 ;; load js config in starter-kit
-(starter-kit-load "js")
-
-;; initialize color-theme
-(load-theme 'monokai)
+;;(starter-kit-load "js")
 
 ;; turn on cursor change when Emacs is idle
 (curchg-toggle-cursor-type-when-idle 1)
@@ -65,9 +64,14 @@
  '(custom-safe-themes (quote ("60f04e478dedc16397353fb9f33f0d895ea3dab4f581307fbf0aa2f07e658a40" "a6df4e244c3ced9e44376747bf70b5499a02212e5f8e40ac68c4a6c5cc6f86d2" default)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
+
+;; initialize color-theme
+(load-theme 'monokai)
+
+(if window-system
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Bitstream Vera Sans Mono" :foundry "outline" :slant italic :weight normal :height 113 :width normal)))))
+ '(default ((t (:family "Bitstream Vera Sans Mono" :foundry "outline" :slant italic :weight normal :height 113 :width normal))))))
