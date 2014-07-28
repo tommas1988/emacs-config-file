@@ -58,7 +58,7 @@
 
  '(show-paren-mode t)
  '(tool-bar-mode nil)
- '(scroll-bar-mode -1))
+ '(scroll-bar-mode nil))
 
 
 (if window-system
