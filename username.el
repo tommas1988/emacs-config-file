@@ -1,8 +1,3 @@
-;; turn off the tool bar
-(tool-bar-mode -1)
-;; turn off the scroll bar
-(scroll-bar-mode -1)
-
 ;; use company-mode in all buffers
 (global-company-mode 1)
 
@@ -64,20 +59,17 @@
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 
-;; initialize color-theme
-(load-theme 'monokai)
 
 (if window-system
+;; turn off the scroll bar
+(scroll-bar-mode -1)
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-<<<<<<< HEAD
- '(default ((t (:family "Bitstream Vera Sans Mono" :foundry "outline" :slant italic :weight normal :height 113 :width normal))))))
-=======
  '(default ((t (:family "Bitstream Vera Sans Mono" :foundry "outline" :slant italic :weight normal :height 113 :width normal)))))
 
 ;; initialize color-theme
 (load-theme 'monokai)
->>>>>>> dbaed740d2399cd0c6673b89f4baf2cf5f3136b1
