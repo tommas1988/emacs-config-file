@@ -57,19 +57,17 @@
  '(custom-safe-themes (quote ("60f04e478dedc16397353fb9f33f0d895ea3dab4f581307fbf0aa2f07e658a40" "a6df4e244c3ced9e44376747bf70b5499a02212e5f8e40ac68c4a6c5cc6f86d2" default)))
 
  '(show-paren-mode t)
- '(tool-bar-mode nil))
+ '(tool-bar-mode nil)
+ '(scroll-bar-mode -1))
 
 
 (if window-system
-;; turn off the scroll bar
-(scroll-bar-mode -1)
-
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Bitstream Vera Sans Mono" :foundry "outline" :slant italic :weight normal :height 113 :width normal)))))
+ '(default ((t (:family "Bitstream Vera Sans Mono" :foundry "outline" :slant italic :weight normal :height 113 :width normal))))))
 
 ;; initialize color-theme
 (load-theme 'monokai)
