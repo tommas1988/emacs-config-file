@@ -54,7 +54,7 @@
  ;; If there is more than one, they won't work right.
  '(blink-cursor-mode nil)
  '(column-number-mode t)
- '(custom-safe-themes (quote ("60f04e478dedc16397353fb9f33f0d895ea3dab4f581307fbf0aa2f07e658a40" "a6df4e244c3ced9e44376747bf70b5499a02212e5f8e40ac68c4a6c5cc6f86d2" default)))
+ '(custom-safe-themes t)
 
  '(show-paren-mode t)
  '(tool-bar-mode nil)
