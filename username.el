@@ -3,7 +3,7 @@
 
 ;; php-mode setting
 ;; set php executable for php-mode
-(set-variable 'php-executable "E:/Studio/php/php.exe")
+(set-variable 'php-executable "php-interpreter")
 ;; set flymale-php
 (add-hook 'php-mode-hook 'flymake-php-load)
 ;; set hs-minor-mode
