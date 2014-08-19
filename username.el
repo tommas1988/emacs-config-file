@@ -47,6 +47,13 @@
 ;; set up window-numbering-mode
 (window-numbering-mode t)
 
+;; load sql-indent library
+(load-library "sql-indent")
+
+;; load sqlup to sql-mode
+(add-hook 'sql-mode-hook 'sqlup-mode)
+(add-hook 'sql-interactive-mode-hool 'sqlup-mode)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
