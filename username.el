@@ -14,6 +14,9 @@
 ;; config web-mode
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
+(setq web-mode-engines-alist '(("php" . "\\.phtml\\'")))
+(setq web-mode-markup-indent-offset 2)
+(setq web-mode-css-indent-offset 2)
 
 ;; config js2-mode
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
