@@ -22,6 +22,10 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.json\\'" . js2-mode))
 
+;; config web-beautify
+(eval-after-load 'js2-mode
+  '(define-key js2-mode-map (kbd "C-c b") 'web-beautify-js))
+
 ;; turn on cursor change when Emacs is idle
 (curchg-toggle-cursor-type-when-idle 1)
 
