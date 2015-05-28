@@ -1,8 +1,7 @@
-;; use highlight-current-line-minor-mode in log files
-;;(setq highlight-current-line-globally 1)
+;; config highlight-current-line-minor-mode and a key bound
 (highlight-current-line-minor-mode)
 (highlight-current-line-set-bg-color "dark cyan")
-(add-to-list 'auto-mode-alist '("\\.log\\'" . highlight-current-line-minor-mode))
+(global-set-key (kbd "C-x C-h") 'highlight-current-line-minor-mode)
 
 ;; use company-mode in all buffers
 (global-company-mode 1)
