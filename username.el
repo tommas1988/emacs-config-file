@@ -1,3 +1,8 @@
+;; use highlight-current-line-minor-mode in all buffers
+(setq highlight-current-line-globally 1)
+(highlight-current-line-minor-mode 1)
+(highlight-current-line-set-bg-color "dark cyan")
+
 ;; use company-mode in all buffers
 (global-company-mode 1)
 
