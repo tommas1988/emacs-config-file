@@ -3,6 +3,17 @@
 (highlight-current-line-set-bg-color "dark cyan")
 (global-set-key (kbd "C-x C-h") 'highlight-current-line-minor-mode)
 
+;; config hs-minor-mode
+(global-set-key (kbd "C-c C-t") 'hs-toggle-hiding)
+
+;; config c-mode
+(add-hook 'c-mode-hook 'hs-minor-mode)
+;; gtags is required to use prev next marks functions
+(eval-after-load 'ggtags
+  '(define-key c-mode-base-map (kbd "C-c C-p") 'ggtags-prev-marks))
+(eval-after-load 'ggtags
+  '(define-key c-mode-base-map (kbd "C-c C-n") 'ggtags-next-marks))
+
 ;; use company-mode in all buffers
 (global-company-mode 1)
 
@@ -22,6 +33,9 @@
 (setq web-mode-engines-alist '(("php" . "\\.phtml\\'")))
 (setq web-mode-markup-indent-offset 2)
 (setq web-mode-css-indent-offset 2)
+;; force autoclosing and autoparing when used in tty
+(setq web-mode-enable-auto-closing t)
+(setq web-mode-enable-auto-pairing t)
 
 ;; config js2-mode
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
