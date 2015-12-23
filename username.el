@@ -10,9 +10,9 @@
 (add-hook 'c-mode-hook 'hs-minor-mode)
 ;; gtags is required to use prev next marks functions
 (eval-after-load 'ggtags
-  '(define-key c-mode-base-map (kbd "C-c C-p") 'ggtags-prev-marks))
+  '(define-key c-mode-base-map (kbd "C-c C-p") 'ggtags-prev-mark))
 (eval-after-load 'ggtags
-  '(define-key c-mode-base-map (kbd "C-c C-n") 'ggtags-next-marks))
+  '(define-key c-mode-base-map (kbd "C-c C-n") 'ggtags-next-mark))
 
 ;; use company-mode in all buffers
 (global-company-mode 1)
