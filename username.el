@@ -39,6 +39,9 @@
 (setq web-mode-engines-alist '(("php" . "\\.phtml\\'")))
 (setq web-mode-markup-indent-offset 2)
 (setq web-mode-css-indent-offset 2)
+;; force autoclosing and autoparing when used in tty
+(setq web-mode-enable-auto-closing t)
+(setq web-mode-enable-auto-pairing t)
 
 ;; config js2-mode
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
