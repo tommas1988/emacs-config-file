@@ -3,6 +3,23 @@
 (highlight-current-line-set-bg-color "dark cyan")
 (global-set-key (kbd "C-x C-h") 'highlight-current-line-minor-mode)
 
+;; set transparency to 90
+(seethru 90)
+
+;; config hs-minor-mode
+(global-set-key (kbd "C-c C-t") 'hs-toggle-hiding)
+
+;; config c-mode
+(add-hook 'c-mode-hook 'hs-minor-mode)
+(eval-after-load 'ggtags
+  '(define-key c-mode-base-map "\C-c\C-p" 'ggtags-prev-mark))
+(eval-after-load 'ggtags
+  '(define-key c-mode-base-map "\C-c\C-n" 'ggtags-next-mark))
+
+;; org-mode settings
+(setq org-src-fontify-natively t)
+(setq org-startup-indented nil)
+
 ;; use company-mode in all buffers
 (global-company-mode 1)
 
@@ -51,7 +68,7 @@
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; overwrite etags key bind
-(global-set-key (kbd "M-.") 'etags-select-find-tag-at-point)
+;;(global-set-key (kbd "M-.") 'etags-select-find-tag-at-point)
 
 ;; set smartparens-global-mode
 (smartparens-global-mode t)
