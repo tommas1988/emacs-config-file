@@ -1,10 +1,10 @@
+;; set default buffer file coding system
+(setq-default buffer-file-coding-system 'utf-8-unix')
+
 ;; config highlight-current-line-minor-mode and a key bound
 (highlight-current-line-minor-mode)
 (highlight-current-line-set-bg-color "dark cyan")
 (global-set-key (kbd "C-x C-h") 'highlight-current-line-minor-mode)
-
-;; set transparency to 90
-(seethru 90)
 
 ;; config hs-minor-mode
 (global-set-key (kbd "C-c C-t") 'hs-toggle-hiding)
@@ -45,7 +45,6 @@
 
 ;; config js2-mode
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
-(add-to-list 'auto-mode-alist '("\\.json\\'" . js2-mode))
 
 ;; config web-beautify
 (eval-after-load 'js2-mode
