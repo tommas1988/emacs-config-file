@@ -1,5 +1,5 @@
 ;; set default buffer file coding system
-(setq-default buffer-file-coding-system 'utf-8-unix')
+(setq-default buffer-file-coding-system 'utf-8-unix)
 
 ;; config highlight-current-line-minor-mode and a key bound
 (highlight-current-line-minor-mode)
