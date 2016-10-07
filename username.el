@@ -9,6 +9,9 @@
 ;; config hs-minor-mode
 (global-set-key (kbd "C-c C-t") 'hs-toggle-hiding)
 
+;; set ggtags-mode
+(global-set-key (kbd "M-*") 'pop-tag-mark)
+
 ;; config c-mode
 (add-hook 'c-mode-hook 'hs-minor-mode)
 (eval-after-load 'ggtags
