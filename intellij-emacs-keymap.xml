@@ -1,13 +1,20 @@
 <keymap version="1" name="Emacs copy" parent="Emacs">
+  <action id="AddToFavoritesPopup" />
   <action id="Back">
     <keyboard-shortcut first-keystroke="ctrl alt left" />
     <mouse-shortcut keystroke="button4" />
-    <keyboard-shortcut first-keystroke="shift alt comma" />
+    <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="ctrl p" />
   </action>
   <action id="CommentByBlockComment">
     <keyboard-shortcut first-keystroke="shift ctrl slash" />
     <keyboard-shortcut first-keystroke="shift ctrl divide" />
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="ctrl c" />
+  </action>
+  <action id="EditorScrollBottom">
+    <keyboard-shortcut first-keystroke="shift alt period" />
+  </action>
+  <action id="EditorScrollTop">
+    <keyboard-shortcut first-keystroke="shift alt comma" />
   </action>
   <action id="EditorTextEnd">
     <keyboard-shortcut first-keystroke="ctrl end" />
@@ -23,7 +30,7 @@
   <action id="Forward">
     <keyboard-shortcut first-keystroke="ctrl alt right" />
     <mouse-shortcut keystroke="button5" />
-    <keyboard-shortcut first-keystroke="shift alt period" />
+    <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="ctrl n" />
   </action>
   <action id="GotoClass">
     <keyboard-shortcut first-keystroke="shift alt g" />
@@ -51,13 +58,15 @@
     <keyboard-shortcut first-keystroke="shift ctrl f12" />
     <keyboard-shortcut first-keystroke="f12" />
   </action>
-  <action id="JumpToLastWindow" />
-  <action id="NextOccurence">
-    <keyboard-shortcut first-keystroke="ctrl alt down" />
-    <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="ctrl n" />
+  <action id="JumpToLastChange">
+    <keyboard-shortcut first-keystroke="shift ctrl back_space" />
+    <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="l" />
   </action>
-  <action id="PreviousOccurence">
-    <keyboard-shortcut first-keystroke="ctrl alt up" />
-    <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="ctrl p" />
+  <action id="JumpToLastWindow" />
+  <action id="JumpToNextChange">
+    <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="n" />
+  </action>
+  <action id="ReformatCode">
+    <keyboard-shortcut first-keystroke="shift alt f" />
   </action>
 </keymap>
