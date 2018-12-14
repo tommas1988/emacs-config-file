@@ -1,4 +1,4 @@
-<keymap version="1" name="Emacs copy" parent="Emacs">
+<keymap version="1" name="emacs" parent="Emacs">
   <action id="AddToFavoritesPopup" />
   <action id="Back">
     <keyboard-shortcut first-keystroke="ctrl alt left" />
@@ -22,6 +22,11 @@
   <action id="EditorTextStart">
     <keyboard-shortcut first-keystroke="ctrl home" />
     <keyboard-shortcut first-keystroke="escape" second-keystroke="comma" />
+  </action>
+  <action id="EditorToggleCase">
+    <keyboard-shortcut first-keystroke="shift ctrl u" />
+    <keyboard-shortcut first-keystroke="ctrl x" second-keystroke="ctrl u" />
+    <keyboard-shortcut first-keystroke="ctrl x" second-keystroke="ctrl l" />
   </action>
   <action id="FindInPath">
     <keyboard-shortcut first-keystroke="shift ctrl f" />
@@ -68,5 +73,17 @@
   </action>
   <action id="ReformatCode">
     <keyboard-shortcut first-keystroke="shift alt f" />
+  </action>
+  <action id="Resume">
+    <keyboard-shortcut first-keystroke="f9" />
+    <keyboard-shortcut first-keystroke="c" />
+  </action>
+  <action id="StepInto">
+    <keyboard-shortcut first-keystroke="f7" />
+    <keyboard-shortcut first-keystroke="s" />
+  </action>
+  <action id="StepOver">
+    <keyboard-shortcut first-keystroke="f8" />
+    <keyboard-shortcut first-keystroke="n" />
   </action>
 </keymap>
