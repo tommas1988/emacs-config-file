@@ -1,4 +1,8 @@
 <keymap version="1" name="emacs" parent="Emacs">
+  <action id="$Copy">
+    <keyboard-shortcut first-keystroke="ctrl insert" />
+    <keyboard-shortcut first-keystroke="escape" second-keystroke="w" />
+  </action>
   <action id="AddToFavoritesPopup" />
   <action id="Back">
     <keyboard-shortcut first-keystroke="ctrl alt left" />
@@ -9,6 +13,10 @@
     <keyboard-shortcut first-keystroke="shift ctrl slash" />
     <keyboard-shortcut first-keystroke="shift ctrl divide" />
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="ctrl c" />
+  </action>
+  <action id="EditorCopy">
+    <keyboard-shortcut first-keystroke="ctrl insert" />
+    <keyboard-shortcut first-keystroke="escape" second-keystroke="w" />
   </action>
   <action id="EditorScrollBottom">
     <keyboard-shortcut first-keystroke="shift alt period" />
@@ -31,6 +39,9 @@
   <action id="FindInPath">
     <keyboard-shortcut first-keystroke="shift ctrl f" />
     <keyboard-shortcut first-keystroke="shift ctrl s" />
+  </action>
+  <action id="FindNext">
+    <keyboard-shortcut first-keystroke="f3" />
   </action>
   <action id="Forward">
     <keyboard-shortcut first-keystroke="ctrl alt right" />
@@ -71,19 +82,27 @@
   <action id="JumpToNextChange">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="n" />
   </action>
+  <action id="QuickDocCopy">
+    <keyboard-shortcut first-keystroke="ctrl insert" />
+    <keyboard-shortcut first-keystroke="escape" second-keystroke="w" />
+  </action>
   <action id="ReformatCode">
     <keyboard-shortcut first-keystroke="shift alt f" />
   </action>
   <action id="Resume">
     <keyboard-shortcut first-keystroke="f9" />
-    <keyboard-shortcut first-keystroke="c" />
+    <keyboard-shortcut first-keystroke="alt c" />
   </action>
   <action id="StepInto">
     <keyboard-shortcut first-keystroke="f7" />
-    <keyboard-shortcut first-keystroke="s" />
+    <keyboard-shortcut first-keystroke="alt s" />
   </action>
   <action id="StepOver">
     <keyboard-shortcut first-keystroke="f8" />
-    <keyboard-shortcut first-keystroke="n" />
+    <keyboard-shortcut first-keystroke="alt n" />
+  </action>
+  <action id="XDebugger.CopyValue">
+    <keyboard-shortcut first-keystroke="ctrl insert" />
+    <keyboard-shortcut first-keystroke="escape" second-keystroke="w" />
   </action>
 </keymap>
